@@ -6,3 +6,9 @@ Semana 2:
 . 26/01/22 Primeros pasos en R y Rstudio
 
 .27/01/22 Conectar Github con Rstudio
+
+Semana 3:
+
+. 02/02/22 Sala de computo instalar credenciales y protyecto
+
+.03/02/22  Sala de computo
