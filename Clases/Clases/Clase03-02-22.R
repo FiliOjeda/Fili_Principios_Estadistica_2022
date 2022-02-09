@@ -1,7 +1,8 @@
-Filiberto Lozoya Ojeda
+
+# Filiberto Lozoya Ojeda
 03/02/22
 Clases
-Sesion Semana 3 Sala de Computo
+# Sesion Semana 3 sala de computo
 
 
 # Muestra basica de R -----------------------------------------------------
@@ -50,5 +51,4 @@ inventario$dxh <- inventario$h * inventario$DAP
 
 
 # Graficas ----------------------------------------------------------------
-
 
