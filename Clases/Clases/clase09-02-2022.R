@@ -1,6 +1,6 @@
 # Filiberto Lozoya Ojeda
 # 09/02/2022 
-# sesion semana 4 sala de computo
+
 
 
 # importar datos ----------------------------------------------------------
