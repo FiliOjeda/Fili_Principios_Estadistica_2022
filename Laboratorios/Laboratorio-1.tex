@@ -1,0 +1,213 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\title{Laboratorio-1.R}
+\author{Junio}
+\date{2022-02-04}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Laboratorio-1.R},
+  pdfauthor={Junio},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Laboratorio 1 }
+\CommentTok{\# Filiberto Lozoya Ojeda}
+\CommentTok{\#02/02/2022}
+
+
+\CommentTok{\# PARTE II VARIABLES {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\CommentTok{\#Problema 1:}
+
+\CommentTok{\#Identifique el tipo de variable (cualitativa o cuantitativa) para la lista de preguntas de una encuesta}
+\CommentTok{\#aplicada a estudiantes universitarios en una clase de estadística:}
+  
+\CommentTok{\#Nombre de estudiante.}
+\CommentTok{\#Cualitativa}
+\CommentTok{\# Fecha de nacimiento (p. Ej., 21/10/1995).}
+\CommentTok{\#Cuantitativa}
+\CommentTok{\#Edad (en años).}
+\CommentTok{\#Cuantitativa}
+\CommentTok{\#Dirección de casa (por ejemplo, 1234 Ave. Alamo).}
+\CommentTok{\#Cualitativa}
+\CommentTok{\#Número de teléfono (por ejemplo, 510{-}123{-}4567)}
+\CommentTok{\#Cuantitativas}
+\CommentTok{\#Área principal de estudio.}
+\CommentTok{\#Cualitativas}
+\CommentTok{\#Grado de año universitario: primer año, segundo año, tercer año, último año.}
+\CommentTok{\#Cualitativa}
+\CommentTok{\#Puntaje en la prueba de mitad de período (basado en 100 puntos posibles).}
+\CommentTok{\#cuantitativa}
+\CommentTok{\#Calificación general: A, B, C, D, F.}
+\CommentTok{\#cualitativa}
+\CommentTok{\#Tiempo (en minutos) para completar la prueba final de MCF 202.}
+\CommentTok{\#cuantitativo}
+\CommentTok{\#Numero de hermanos}
+\CommentTok{\#cuantitativos}
+
+\CommentTok{\#Problema 2:}
+\CommentTok{\#Elija un objeto (cualquier objeto, por ejemplo, animales, plantas, países, instituciones, etc.) y obtenga}
+\CommentTok{\#una lista de 4 variables: 2 cuantitativas y 2 categóricas}
+
+\CommentTok{\#num \textless{}{-} c(1:2)}
+\CommentTok{\#Cuantitativa \textless{}{-} c("Edades", "Numeros")}
+\CommentTok{\#categoricas \textless{}{-} c("Fromas de pago", "Tipos de materiales")}
+
+\CommentTok{\#Tabla \textless{}{-} data.frame(num, Cuantitativa, categoricas)}
+
+\CommentTok{\#Problema 3:}
+
+\CommentTok{\#Considere una variable con valores numéricos que describen formas electrónicas de expresar opiniones}
+\CommentTok{\#personales: 1 = Twitter; 2 = correo electrónico; 3 = mensaje de texto; 4 = Facebook; 5 = blog. ¿Es}
+\CommentTok{\#esta una variable cuantitativa o cualitativa? Explique.}
+
+\CommentTok{\#1\_Twitter}
+\CommentTok{\#cuantitativa, ya que se pueden contar los usuarios activos y sacar una media a partir de estos}
+
+\CommentTok{\#2\_correos electronicos}
+\CommentTok{\#cuantitativa, ya que se puede obtener los correos que se envian en un lapzao de x horas}
+
+\CommentTok{\#3\_mensajes de texto}
+\CommentTok{\#cauntitativa, poque se puede sacar el numero de mensajes enviados al dia por persona }
+
+\CommentTok{\#4\_facebook}
+\CommentTok{\#cuantitativa, se puede obtener el numero de personas activas simultaniamente, las reacciones por foto,etc.}
+
+\CommentTok{\#5\_Blog}
+\CommentTok{\#cuantitativas, se puede obtener cuantos blogs hace una persona po dia, los blogs ceraos en un dia por todos los usuarios.}
+
+\CommentTok{\#Problema 4:}
+
+  \CommentTok{\#Para cada pregunta de investigación, (1) identifique a los individuos de interés (el grupo o grupos que                                                                           se están estudiando), (2) identifique la (s) variable (s) (la característica sobre la que recopilaríamos                                                                                                                                               datos) y (3) determine si cada variable es categórico o cuantitativo.}
+
+\CommentTok{\#¿Cuál es la cantidad promedio de horas que los estudiantes de universidades públicas trabajan}
+\CommentTok{\#cada semana? }
+
+\CommentTok{\#ht \textless{}{-} c(10, 14, 12, 18, 23, 15, 6, 9, 14, 24)}
+
+\CommentTok{\#mean(ht)}
+
+ \CommentTok{\# ¿Qué proporción de todos los estudiantes universitarios de México están inscritos en una}
+\CommentTok{\#universidad pública?}
+
+\CommentTok{\#EdU \textless{}{-} (230000)}
+\CommentTok{\#EdUPrivadas \textless{}{-} (170000)}
+\CommentTok{\#EdU {-} EdUPrivadas}
+
+
+ \CommentTok{\# En los universidades públicas, ¿las estudiantes femeninas tienen un promedio de CENEVAL}
+\CommentTok{\#más alto que los estudiantes varones? si}
+
+  \CommentTok{\#¿Es más probable que los atletas universitarios reciban asesoramiento académico que los atletas}
+\CommentTok{\#no universitarios? no}
+
+ \CommentTok{\# Si reuniéramos datos para responder a las preguntas de la investigación anterior, ¿qué datos}
+\CommentTok{\#podrían analizarse mediante un histograma? ¿Cómo lo sabes?.}
+\CommentTok{\#si, porque mediante el histograma puedes ver el numero de variables que estas tomando para responder las preguntas}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}

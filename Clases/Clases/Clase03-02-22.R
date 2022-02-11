@@ -1,7 +1,7 @@
-Filiberto Lozoya Ojeda
+# Filiberto Lozoya Ojeda
 03/02/22
 Clases
-Sesion Semana 3 Sala de Computo
+# Sesion Semana 3 Sala de Computo
 
 
 # Muestra basica de R -----------------------------------------------------
@@ -36,7 +36,7 @@ DC <- c(9, 8.5, 7.6, 9.3, 9.2)
 t <- c(15, 16, 15, 18, 17)
 Sp <- c("Pino", "Pino", "Pino", "Encino", "Encino")
 
-inventario <- data.frame(Ba, h, DAP, DC, t, Sp)
+tabla <- data.frame(Ba, h, DAP, DC, t, Sp)
 
 mean(inventario$h)
 mean(inventario$DAP)
