@@ -12,3 +12,13 @@ Semana 3:
 + 02/02/22 Sala de computo instalar credenciales y protyecto
 
 + 03/02/22  Sala de computo
+
+Semana 4:
+
++ 09/02/2022
+
++ 10/02/2022
+
+Semana 5:
+
++ 16/02/2022
