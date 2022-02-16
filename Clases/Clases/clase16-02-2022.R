@@ -25,7 +25,7 @@ freq.sp/sum(freq.sp)*100
 
 freq.ps <- table(inventario$Posicion)
 
-freq.ps/sum(freq.ps)*100
+por.pos <- freq.ps/sum(freq.ps)*100
 
 barplot(freq.ps, col ="red", las = 1)
 
@@ -36,6 +36,8 @@ barplot(freq.sp, las=1, col = "lightblue", border = NA)
 pie(freq.ps, col = topo.colors(4))
 pie(freq.sp, col = topo.colors(3), labels = paste(levels(inventario$Especie), freq.sp, "ind"))
 
+
+pie(freq.ps, col = topo.colors(4), labels = paste(levels(inventario$Posicion), por.pos, "%"))
 
 
 
