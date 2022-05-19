@@ -2,7 +2,9 @@
 # 11/05/2022
 # FLO
 
-Erupciones <- read.csv("Clases/Clases/erupciones.csv")
+Erupciones <- read.csv("erupciones.csv")
+
+Erupciones.lm <- lm(Erupciones$eruptions ~ Erupciones$waiting)
 
 plot(Erupciones$waiting, Erupciones$eruptions,
      xlab = "Tiempo de espera entre erupciones (min)",
@@ -39,7 +41,7 @@ var(Erupciones$waiting)
 cor.test(Erupciones$waiting, Erupciones$eruptions)
 
 
-Erupciones.lm <- lm(Erupciones$eruptions ~ Erupciones$waiting)
+
 
 summary(Erupciones.lm)
 
@@ -85,7 +87,7 @@ summary(Erupciones.lm)
 # ¿Cual seria la duracion en minutos de la proxima erupcion, 
 # si los tiempos de espera son los dados en el siguiente cuadro?
 
-Erupcines$yprimas <- round(-1.874016+ 0.075628* Erupciones$eruptions, 2)
+Erupciones$yprimas <- round(-1.874016+ 0.075628* Erupciones$eruptions, 2)
 
 # Estimar el valor de y la prima para los valores de x dados, aplicando la 
 # formula de la regresion
