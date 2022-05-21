@@ -5,8 +5,7 @@
 
 # importar datos ----------------------------------------------------------
 
-vivero <- read.csv("Clases/BD_Viveros.csv", header = TRUE)
-
+BD_Viveros <- read.csv("Viveros.csv")
 
 # Estadistica Descriptiva -------------------------------------------------
 

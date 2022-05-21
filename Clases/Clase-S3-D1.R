@@ -1,15 +1,15 @@
-<<<<<<< HEAD
-# Filiberto Lozoya Ojeda
-03/02/22
-Clases
-# Sesion Semana 3 Sala de Computo
-=======
 
 # Filiberto Lozoya Ojeda
-03/02/22
-Clases
+#03/02/22
+#Clases
+# Sesion Semana 3 Sala de Computo
+
+
+# Filiberto Lozoya Ojeda
+#03/02/22
+#Clases
 # Sesion Semana 3 sala de computo
->>>>>>> d8e3495a184ddc0051ef3890b1ea66c859bd472e
+
 
 
 # Muestra basica de R -----------------------------------------------------
@@ -44,7 +44,7 @@ DC <- c(9, 8.5, 7.6, 9.3, 9.2)
 t <- c(15, 16, 15, 18, 17)
 Sp <- c("Pino", "Pino", "Pino", "Encino", "Encino")
 
-tabla <- data.frame(Ba, h, DAP, DC, t, Sp)
+inventario <- data.frame(Ba, h, DAP, DC, t, Sp)
 
 mean(inventario$h)
 mean(inventario$DAP)
