@@ -15,20 +15,20 @@ sd(costal)
 
 t.test(costal, mu=80)
 
-+ ¿Cual es el valor de p?
+# ¿Cual es el valor de p?
 #  = 0.02264
-+ ¿Cuale es la media de los costales que compro el ganadero? 
+# ¿Cuale es la media de los costales que compro el ganadero? 
   mean(costal)
 # = 78.91068
 
-+ ¿Cuál hipótiesis se acepta?
+# ¿Cuál hipótiesis se acepta?
 #  Se acepta la H1 <- Hipótesis alternativa
   
-+ ¿Cuantos grados de libertad tiene el experimento?
+# ¿Cuantos grados de libertad tiene el experimento?
  # df = 43
   
-+ ¿Exsiste evidencia de que el valor medio promedio de los costales observados es
-menor (significativamente) a los que anuncia el producto?
+# ¿Exsiste evidencia de que el valor medio promedio de los costales observados es
+# menor (significativamente) a los que anuncia el producto?
 # =si porque la media marca que los costales en promedio tienen un peso de 78.91068
 #  en lugar de 80 como lo marca el provedor
   
@@ -43,20 +43,20 @@ menor (significativamente) a los que anuncia el producto?
 t.test(azufre, mu=17.5)
   
   
-+ ¿Cual es el valor de p?
+# ¿Cual es el valor de p?
 #  = 0.1893
 
-+ ¿Cuales son los intervalos de confianza al 95%?
+# ¿Cuales son los intervalos de confianza al 95%?
 #  = 16.87912 y 20.53588
   
-+ ¿Cuantos grados de libertad tiene el experimento?
+# ¿Cuantos grados de libertad tiene el experimento?
  # df = 39
 
-+ ¿Cual es la hipótesis aceptada?
+# ¿Cual es la hipótesis aceptada?
 #  Se acepta la H0 <- Hipótesis nula
 
-+ ¿Exsiste evidencia de que el valor promedio de las emisiones observadas es mayor 
-  (significativamente) a la declarada en los procedimientos de seguridad de la empresa?
+# ¿Exsiste evidencia de que el valor promedio de las emisiones observadas es mayor 
+# (significativamente) a la declarada en los procedimientos de seguridad de la empresa?
   
   # = Si, ya que por año emite 18.7075 Toneladas de óxido de azufre y es mayor
   # a las 17.5 que esta establecido
@@ -73,18 +73,18 @@ mean(temperatura$temp_media)
 
 t.test(temp, mu=24)
 
-+ ¿Cual es el valor de p?
+# ¿Cual es el valor de p?
  # = 0.03615
 
-+ ¿Cuantos grados de libertad tiene el experimento?
+# ¿Cuantos grados de libertad tiene el experimento?
 
 # df = 845
   
-  + ¿Cual es la hipótesis aceptada?
+# ¿Cual es la hipótesis aceptada?
   # Se acepta la H1 <- Hipótesis alternativa
 
-+ ¿Existe evidencia de que el valor medio promedio de la temperatura observada es mayor
-(significativamente) a la declarada?
+# ¿Existe evidencia de que el valor medio promedio de la temperatura observada es mayor
+# (significativamente) a la declarada?
 
 # No, ya que la media se mantiene en 23.62908, por lo que es menor a los 24 
 # que estan establecidos
