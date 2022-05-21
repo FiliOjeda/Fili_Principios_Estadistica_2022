@@ -18,6 +18,7 @@ Semana 3:
 + 02/02/22 Sala de computo instalar credenciales y protyecto
 
 + 03/02/22  Sala de computo
++[HW01.pdf](https://github.com/FiliOjeda/Fili_Principios_Estadistica_2022/blob/main/Tareas/TareaXX__Filiberto.pdf)
 
 Semana 4:
 
