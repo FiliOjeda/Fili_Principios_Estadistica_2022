@@ -17,7 +17,7 @@ Semana 3:
 
 + 02/02/22 Sala de computo instalar credenciales y protyecto
 
-++[S3-D1](https://github.com/FiliOjeda/Fili_Principios_Estadistica_2022/blob/main/Clases/Clase-S3-D1.R)
+++ [S3-D1](https://github.com/FiliOjeda/Fili_Principios_Estadistica_2022/blob/main/Clases/Clase-S3-D1.R)
 
 + 03/02/22  Sala de computo
 
