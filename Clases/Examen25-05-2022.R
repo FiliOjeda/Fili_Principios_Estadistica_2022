@@ -3,7 +3,7 @@
 # Filiberto
 
 
-madera <- read_csv("Madera.csv")
+madera <- read.csv("Madera.csv")
 library(dplyr)
 
 Pino <- madera %>% 
