@@ -75,7 +75,7 @@ Semana 7:
 
 + 02/03/2022: Sala de computo: Importar datos de semillas
 
-++[S7-D1](https://github.com/FiliOjeda/Fili_Principios_Estadistica_2022/blob/main/Clases/Clase-S7-D1.R)
++ + [S7-D1](https://github.com/FiliOjeda/Fili_Principios_Estadistica_2022/blob/main/Clases/Clase-S7-D1.R)
 
 + 03/03/2022: Sala de computo: Explicación de reporte cinetífico(PIA).
 
@@ -156,4 +156,3 @@ Semana 16:
 + 18/05/2022: Sala de computo: PREPARACIÓN DEL PIA
 
 + 19/05/2022: Sala de computo: PREPARACIÓN DEL PIA
-
